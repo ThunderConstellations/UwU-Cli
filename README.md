@@ -1,277 +1,223 @@
-# UwU-CLI: The Ultimate Chaotic CMD Replacement 💀
+# 🚀 UwU-CLI: Professional-Grade Development Shell with AI Assistance
 
-A fully-featured, AI-powered, context-aware CMD replacement that combines the functionality of CMD with Clink autosuggestions, chaotic UwU energy, automatic clapbacks, and AI assistance.
+[![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](https://github.com/ThunderConstellations/UwU-Cli/releases)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/ThunderConstellations/UwU-Cli)
 
-## 🌟 Features
+**UwU-CLI** is a revolutionary command-line interface that transforms your terminal into a professional-grade development environment with AI assistance capabilities. Built for developers who want the power of modern AI tools integrated seamlessly into their workflow.
 
-### 🖥️ **Enhanced CMD Replacement**
+## ✨ Features
 
-- **Full CMD Compatibility** - All standard Windows CMD commands work
-- **Command Aliases** - `ls` → `dir`, `clear` → `cls`, and more
-- **Enhanced Output** - Colorful, themed command results
-- **Autosuggestions** - Tab completion for commands and files
-- **Command History** - Persistent command history with search
+### 🔄 Infinite AI Assistance Mode
 
-### 🤖 **AI Integration**
+- **Continuous AI assistance** until task completion
+- **Context persistence** across sessions
+- **Smart task detection** and continuation
+- **Plan tracking** and reference management
 
-- **OpenRouter API** - Powered by DeepSeek R1 0528 (free model)
-- **Smart Commands** - `ai:script`, `ai:cmd`, `ai:explain`, `ai:debug`, `ai:optimize`
-- **Context-Aware** - AI understands your code and provides relevant assistance
-- **Background Processing** - Non-blocking AI job queue
+### 💻 Multi-Shell Command Routing
 
-### 🎨 **Toxic Themes & UI**
+- **`cmd:`** - Execute commands in CMD shell
+- **`ps1:`** - Execute commands in PowerShell
+- **`bash:`** - Execute commands in Bash (if available)
+- **`cs:`** - Quick Cursor AI commands
+- **Intelligent routing** with output capture
 
-- **Colorful Prompts** - Oh-My-Zsh style themes (toxic, rainbow, neon, pastel)
-- **ASCII Effects** - Thunderbolts, bubble parties, psychic glows, wizard hats
-- **Animated Spinners** - Loading animations with themed effects
-- **Auto-Clapbacks** - Automatic toxic responses after every command
+### 🔬 Advanced Research Modes
 
-### 🔌 **Plugin System**
+- **`deep:`** - Deep research with comprehensive analysis
+- **`review:`** - Code review for systematic error detection
+- **`audit:`** - Full project audit and analysis
+- **Enhanced AI prompts** for thorough research
 
-- **Extensible Architecture** - Easy to add new commands and features
-- **Sample Plugins** - Git enhancer, development tools, and more
-- **Hot Reloading** - Plugins load automatically without restart
+### 🚀 Enhanced Quick Commands
 
-### 🎯 **Productivity Features**
+- **`/e`** - Explain code + create comprehensive documentation
+- **`/p`** - Research + plan + create project roadmap
+- **`/cc`** - Continue where left off with context awareness
+- **`/c`, `/f`, `/o`, `/t`, `/r`, `/d`, `/h`, `/s`, `/g`** - Standard commands
 
-- **Smart Context Detection** - Automatically detects project types and frameworks
-- **Command Chaining** - Pipe commands together for complex operations
-- **Custom Aliases** - Create your own command shortcuts
-- **Environment Management** - Easy configuration and customization
+### 🤖 Intelligent Command Routing
+
+- **AI chat detection** and automatic routing
+- **Shell command routing** to appropriate environments
+- **Context-aware processing** for optimal results
+- **Enhanced error handling** and recovery
 
 ## 🚀 Quick Start
 
-### Windows Installation
+### Prerequisites
+- Python 3.8 or higher
+- Windows, macOS, or Linux
+- Cursor IDE (optional, for enhanced features)
 
+### Installation
+
+#### Windows (Recommended)
 ```batch
 # Clone the repository
 git clone https://github.com/ThunderConstellations/UwU-Cli.git
 cd UwU-Cli
 
-# Run the installer
-installer.bat
+# Run the installer (as Administrator)
+install.bat
 
 # Start UwU-CLI
 uwu
 ```
 
-### Linux/macOS Installation
+#### PowerShell
+```powershell
+# Clone the repository
+git clone https://github.com/ThunderConstellations/UwU-Cli.git
+cd UwU-Cli
+
+# Run the installer (as Administrator)
+.\install.ps1
+
+# Start UwU-CLI
+uwu
+```
+
+#### Unix/Linux/macOS
+
+```bash
+# Make executable and run
+chmod +x install.sh
+./install.sh
+```
+
+#### Manual Installation
 
 ```bash
 # Clone the repository
 git clone https://github.com/ThunderConstellations/UwU-Cli.git
 cd UwU-Cli
 
-# Run the installer
-chmod +x installer.sh
-./installer.sh
-
-# Start UwU-CLI
-uwu
-```
-
-### Manual Setup
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Copy .env.example to .env and add your OpenRouter API key
-cp env.example .env
+# Install in development mode
+pip install -e .
 
 # Start UwU-CLI
 python uwu_cli.py
 ```
 
-## ⚙️ Configuration
+### Usage
 
-### Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-# OpenRouter API Configuration
-OPENROUTER_API_KEY=your_api_key_here
-OPENROUTER_MODEL=deepseek/deepseek-r1-0528:free
-OPENROUTER_BASE_URL=https://api.openrouter.ai/v1
-
-# AI Configuration
-AI_ENABLED=true
-AI_TIMEOUT=30
-AI_MAX_TOKENS=1000
-AI_TEMPERATURE=0.9
-
-# Theme Configuration
-DEFAULT_THEME=toxic
-AUTO_CLAPBACK=true
-```
-
-### Get Your Free API Key
-
-1. Visit [OpenRouter](https://openrouter.ai/keys)
-2. Sign up for a free account
-3. Generate an API key
-4. Add it to your `.env` file
-
-## 🎮 Basic Commands
-
-### Shell Commands
+After installation, you can run UwU-CLI from anywhere:
 
 ```bash
-dir          # Enhanced directory listing with icons
-ls           # Alias for dir (Unix compatibility)
-cd           # Change directory
-cls          # Clear screen
-help         # Show available commands
+# Start UwU-CLI
+uwu-cli
+
+# Or use the short command
+uwu
 ```
 
-### AI Commands
+## 🎮 Command Reference
+
+### Infinite Mode Commands
 
 ```bash
-ai:script "create a Python web scraper"    # Generate scripts
-ai:cmd "list all files in current directory"  # Convert to CMD
-ai:explain "git merge conflict"             # Get explanations
-ai:debug "Python import error"              # Debug assistance
-ai:optimize "slow database query"           # Optimization tips
+/infiniteon          # Enable continuous AI assistance
+/infiniteoff         # Disable infinite mode
+/infinite            # Show infinite mode status
 ```
 
-### Theme Commands
+### Multi-Shell Commands
 
 ```bash
-theme toxic      # Switch to toxic theme
-theme rainbow    # Switch to rainbow theme
-theme neon       # Switch to neon theme
-theme pastel     # Switch to pastel theme
+cmd:dir              # Execute in CMD shell
+ps1:Get-Process      # Execute in PowerShell
+bash:ls -la          # Execute in Bash
+cs:explain this      # Send to Cursor AI
 ```
 
-### Plugin Commands
+### Research Modes
 
 ```bash
-plugin list      # List available plugins
-plugin enable git_enhancer  # Enable Git plugin
-plugin help git_enhancer    # Show plugin help
+deep:python optimization     # Deep research mode
+review:main.py               # Code review mode
+audit:src/                   # Full project audit
 ```
 
-## 🔧 Advanced Usage
-
-### Custom Aliases
+### Enhanced Quick Commands
 
 ```bash
-# Create custom command shortcuts
-alias ll="dir /w"
-alias update="git pull && pip install -r requirements.txt"
-alias dev="python -m http.server 8000"
+/e                           # Explain code + create .md
+/p                           # Research + plan + .md
+/cc                          # Continue where left off
 ```
 
-### Command Chaining
+## 🏗️ Architecture
+
+UwU-CLI is built with a modular architecture:
+
+- **Core CLI Engine** - Command processing and routing
+- **AI Integration** - Cursor IDE and conversation management
+- **State Management** - Session persistence and configuration
+- **Plugin System** - Extensible command architecture
+- **Multi-Shell Support** - Cross-platform shell integration
+
+## 🔧 Configuration
+
+Configuration files are stored in the `config/` directory:
+
+- `main.json` - Main configuration settings
+- `telegram.json` - Telegram bot configuration
+- `security.json` - Security and authentication settings
+- `performance.json` - Performance optimization settings
+
+## 📱 Telegram Integration
+
+UwU-CLI includes remote control capabilities via Telegram:
 
 ```bash
-# Chain commands together
-dir | findstr ".py" | sort
-git status && git add . && git commit -m "Updates"
-```
-
-### Plugin Development
-
-Create custom plugins in the `plugins/` directory:
-
-```python
-class MyPlugin:
-    def __init__(self):
-        self.name = "My Plugin"
-        self.commands = {"mycmd": self.my_command}
-
-    def my_command(self, args):
-        return "Custom command executed!"
-
-def register_plugin():
-    return MyPlugin()
+telegram:start        # Start remote control
+telegram:stop         # Stop remote control
+telegram:status       # Check remote control status
+telegram:enable       # Enable Telegram control
+telegram:disable      # Disable Telegram control
 ```
 
 ## 🧪 Testing
 
-Run the test suite to verify everything works:
+Run the comprehensive test suite:
 
 ```bash
-# Basic functionality tests
-python test_uwu.py
+# Test all advanced features
+python test_advanced_features.py
 
-# Enhanced features tests
-python test_cmd_enhancements.py
-
-# Run all tests
-python -m pytest
+# Test specific components
+python test_cursor_cmd_fix.py
 ```
 
-## 📁 Project Structure
+## 🚀 Advanced Features
 
-```
-UwU-CLI/
-├── uwu_cli.py              # Main CLI application
-├── utils/                   # Core utility modules
-│   ├── ai.py               # AI integration
-│   ├── ascii_ui.py         # UI effects and themes
-│   ├── cmd_enhancements.py # CMD command enhancements
-│   ├── config.py           # Configuration management
-│   ├── tokenizer.py        # Context detection
-│   └── tts.py              # Text-to-speech
-├── plugins/                 # Plugin system
-│   └── git_enhancer.py     # Git enhancement plugin
-├── phrases/                 # Roast and clapback content
-├── scripts/                 # Utility scripts
-├── config/                  # Configuration files
-├── tts/                     # TTS resources
-├── installer.bat            # Windows installer
-├── installer.sh             # Linux/macOS installer
-├── requirements.txt         # Python dependencies
-└── README.md               # This file
-```
+### AI Conversation Management
 
-## 🎯 Roadmap
+- **Persistent storage** of AI conversations
+- **Conversation history** and search
+- **Export functionality** for external use
+- **Statistics tracking** and analytics
 
-### Phase 1: Core CMD Replacement ✅
+### Performance Optimizations
 
-- [x] Basic CMD command execution
-- [x] Command aliases and enhancements
-- [x] Autosuggestions and tab completion
-- [x] Command history management
+- **Lazy loading** of components
+- **Smart caching** system
+- **Memory management** optimization
+- **Background processing** support
 
-### Phase 2: Enhanced AI Integration ✅
+### Cross-Platform Support
 
-- [x] OpenRouter API integration
-- [x] Multiple AI command types
-- [x] Background job processing
-- [x] Context-aware responses
-
-### Phase 3: Advanced Features 🚧
-
-- [x] Plugin system architecture
-- [x] Colorful themes and effects
-- [x] ASCII UI animations
-- [ ] Enhanced autosuggestions
-- [ ] Oh-My-Zsh style prompts
-
-### Phase 4: Productivity Features 📋
-
-- [ ] Command chaining & piping
-- [ ] Smart aliases & functions
-- [ ] Integrated development tools
-- [ ] Project context detection
-
-### Phase 5: Advanced UI & UX 📋
-
-- [ ] Interactive mode
-- [ ] Customizable hotkeys
-- [ ] Rich output formatting
-- [ ] Performance monitoring
+- **Windows** - Full CMD and PowerShell integration
+- **macOS** - Native shell support
+- **Linux** - Bash and shell integration
+- **Unified interface** across platforms
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ### Development Setup
 
@@ -279,62 +225,48 @@ UwU-CLI/
 # Clone and setup development environment
 git clone https://github.com/ThunderConstellations/UwU-Cli.git
 cd UwU-Cli
-pip install -r requirements.txt
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -e .
-
-# Run tests
-python -m pytest
-
-# Format code
-black .
-flake8 .
 ```
 
-## 📝 License
+### Running Tests
+
+```bash
+# Run all tests
+python -m pytest tests/
+
+# Run specific test files
+python test_advanced_features.py
+```
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- **OpenRouter** - For providing free AI model access
-- **DeepSeek** - For the powerful R1 0528 model
-- **Community** - For inspiration and feedback
-- **UwU Culture** - For the chaotic energy that drives this project
+- **Cursor IDE** for AI integration capabilities
+- **Python community** for excellent libraries and tools
+- **Open source contributors** for inspiration and code
 
-## 🆘 Troubleshooting
+## 📞 Support & Community
 
-### Common Issues
+- **Issues**: [GitHub Issues](https://github.com/ThunderConstellations/UwU-Cli/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/ThunderConstellations/UwU-Cli/discussions)
+- **Documentation**: [Wiki](https://github.com/ThunderConstellations/UwU-Cli/wiki)
 
-**AI not working?**
+## 🎯 Roadmap
 
-- Check your `.env` file has the correct API key
-- Verify OpenRouter API key is valid
-- Check internet connection
-
-**Commands not found?**
-
-- Ensure you're in the correct directory
-- Check if the command is available in your PATH
-- Try running `help` to see available commands
-
-**Theme not working?**
-
-- Ensure your terminal supports ANSI colors
-- Try a different theme with `theme <name>`
-- Check if colorama is properly installed
-
-**Plugin errors?**
-
-- Verify plugin files are in the `plugins/` directory
-- Check plugin syntax and imports
-- Restart UwU-CLI after adding plugins
-
-### Getting Help
-
-- Check the [Issues](https://github.com/ThunderConstellations/UwU-Cli/issues) page
-- Create a new issue with detailed error information
-- Join our community discussions
+- [ ] Auto-suggestions system
+- [ ] Syntax highlighting and formatting
+- [ ] Plugin marketplace
+- [ ] Multi-modal AI integration
+- [ ] Cloud platform integration
+- [ ] Advanced Git workflow automation
 
 ---
 
-**Stay toxic -xoxo LiMcCunt out** 💀✨
+**Made with ❤️ by the UwU-CLI Team**
+
+_Transform your terminal into an AI-powered development powerhouse!_
