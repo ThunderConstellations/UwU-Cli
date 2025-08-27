@@ -1,11 +1,11 @@
-# 🚀 UwU-CLI: Cringe Development Shell with AI Assistance
+# 🚀 UwU-CLI: Professional-Grade Development Shell with AI Assistance
 
 [![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](https://github.com/ThunderConstellations/UwU-Cli/releases)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/ThunderConstellations/UwU-Cli)
 
-**UwU-CLI** is a revolutionary command-line interface that transforms your terminal into a professional-grade cringe worthy development environment with AI assistance capabilities. Built for nyah developers who want the power of *///UwU///* modern AI tools integrated seamlessly into their workflow. Additionally it allows the user to send prompts via telegram bot to Cursor AI and has features for infinitely prompting your cursor ai chat to continue where cursor left off every time a prompt finishes.
+**UwU-CLI** is a revolutionary command-line interface that transforms your terminal into a professional-grade development environment with AI assistance capabilities. Built for developers who want the power of modern AI tools integrated seamlessly into their workflow.
 
 ## ✨ Features
 
@@ -48,6 +48,7 @@
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Python 3.8 or higher
 - Windows, macOS, or Linux
 - Cursor IDE (optional, for enhanced features)
@@ -55,6 +56,7 @@
 ### Installation
 
 #### Windows (Recommended)
+
 ```batch
 # Clone the repository
 git clone https://github.com/ThunderConstellations/UwU-Cli.git
@@ -68,6 +70,7 @@ uwu
 ```
 
 #### PowerShell
+
 ```powershell
 # Clone the repository
 git clone https://github.com/ThunderConstellations/UwU-Cli.git
