@@ -7,16 +7,28 @@ Professional-grade development shell with AI assistance capabilities
 
 from setuptools import setup, find_packages
 import os
+from pathlib import Path
 
 # Read the README file for long description
 def read_readme():
-    with open("README.md", "r", encoding="utf-8") as fh:
-        return fh.read()
+    readme_path = Path(__file__).parent / "README.md"
+    if readme_path.exists():
+        with open(readme_path, "r", encoding="utf-8") as fh:
+            return fh.read()
+    return "Professional-grade development shell with AI assistance capabilities"
 
 # Read requirements
 def read_requirements():
-    with open("requirements.txt", "r", encoding="utf-8") as fh:
-        return [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+    req_path = Path(__file__).parent / "requirements.txt"
+    if req_path.exists():
+        with open(req_path, "r", encoding="utf-8") as fh:
+            return [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+    # Fallback requirements if file not found
+    return [
+        "requests>=2.25.0",
+        "colorama>=0.4.4",
+        "pyreadline3>=3.4.1; sys_platform == 'win32'"
+    ]
 
 setup(
     name="uwu-cli",
@@ -27,7 +39,7 @@ setup(
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/UwU-CLI/UwU-Cli",
-    packages=find_packages(include=['utils*']),
+    packages=find_packages(include=['utils*', 'phrases*', 'plugins*', 'tts*']),
     py_modules=['uwu_cli'],
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -68,8 +80,6 @@ setup(
         "Documentation": "https://github.com/UwU-CLI/UwU-Cli#readme",
         "Changelog": "https://github.com/UwU-CLI/UwU-Cli/blob/main/CHANGELOG.md",
     },
-    # PyPI specific - Generic URLs
-    download_url="https://github.com/UwU-CLI/UwU-Cli/archive/refs/tags/v2.0.0.tar.gz",
     platforms=["Windows", "macOS", "Linux"],
     zip_safe=False,
-) 
+)
