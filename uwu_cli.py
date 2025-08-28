@@ -105,13 +105,13 @@ class UwUCLI:
             # Check if Telegram is enabled in config
             telegram_enabled = self.config.get("telegram_enabled", True)
             if telegram_enabled:
-            if start_telegram_control(self._execute_telegram_command):
-                print("🎮 Telegram command control activated")
-                # Send cursor chat integration notification
-                self._send_cursor_chat_notification(
-                    "🚀 UwU-CLI started in Cursor terminal! All output will be captured and sent to Telegram.")
-            else:
-                print("⚠️  Telegram command control failed to start")
+                if start_telegram_control(self._execute_telegram_command):
+                    print("🎮 Telegram command control activated")
+                    # Send cursor chat integration notification
+                    self._send_cursor_chat_notification(
+                        "🚀 UwU-CLI started in Cursor terminal! All output will be captured and sent to Telegram.")
+                else:
+                    print("⚠️  Telegram command control failed to start")
             else:
                 print("📱 Telegram disabled in configuration")
         except Exception as e:
@@ -1101,7 +1101,7 @@ class UwUCLI:
                                     title, tags=['cursor-ai'])
                                 manager.add_message(conv_id, 'user', command)
                                 print(f"💾 Stored in conversation: {conv_id}")
-                        except Exception as e:
+                            except Exception as e:
                                 print(f"⚠️  Failed to store conversation: {e}")
 
                         except Exception as e:
@@ -1269,7 +1269,7 @@ class UwUCLI:
                     
                     if not is_special_command:
                         # This is a regular terminal command - execute it
-                    result = self.shell_command(user_input)
+                        result = self.shell_command(user_input)
                     else:
                         # This was handled by special command handlers above
                         continue

@@ -298,7 +298,7 @@ class CursorController:
                         actual_command = command[11:].strip()
                         return self._send_ai_chat_prompt(actual_command)
                 else:
-                return self._send_ai_chat_prompt(command)
+                    return self._send_ai_chat_prompt(command)
             
             # Common Cursor commands with enhanced responses
             if command_lower in ["save", "save all"]:
