@@ -1,0 +1,11 @@
+# Core dependencies
+requests>=2.25.1
+colorama>=0.4.4
+# readline is not available on Windows, will be handled conditionally
+
+# Windows API integration for Cursor control
+pywin32>=306; sys_platform == "win32"
+
+# Development and testing
+pytest>=6.0.0
+pytest-cov>=2.10.0 

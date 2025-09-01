@@ -1,0 +1,3 @@
+[console_scripts]
+uwu = uwu_cli:main
+uwu-cli = uwu_cli:main

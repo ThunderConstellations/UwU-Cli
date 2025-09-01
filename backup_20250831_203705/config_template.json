@@ -1,0 +1,22 @@
+{
+  "ai": {
+    "openrouter_api_key": "YOUR_API_KEY_HERE",
+    "model": "deepseek/deepseek-r1-0528:free",
+    "max_tokens": 1000,
+    "temperature": 0.9
+  },
+  "telegram": {
+    "bot_token": "YOUR_BOT_TOKEN_HERE",
+    "chat_id": "YOUR_CHAT_ID_HERE",
+    "enabled": false
+  },
+  "cursor": {
+    "path": "C:\\Users\\USERNAME\\AppData\\Local\\Programs\\Cursor\\Cursor.exe",
+    "enabled": true
+  },
+  "general": {
+    "theme": "toxic",
+    "telegram_enabled": false,
+    "autopilot_enabled": false
+  }
+} 

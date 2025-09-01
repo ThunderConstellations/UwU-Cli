@@ -1,0 +1,24 @@
+{
+  "provider": "openrouter",
+  "openrouter": {
+    "api_key": "",
+    "model": "openai/gpt-4o",
+    "base_url": "https://openrouter.ai/api/v1",
+    "http_referer": "https://github.com/UwU-CLI/UwU-Cli",
+    "x_title": "UwU-CLI"
+  },
+  "models": [
+    "openai/gpt-4o",
+    "openai/gpt-4o-mini",
+    "anthropic/claude-3.5-sonnet",
+    "anthropic/claude-3-haiku",
+    "deepseek/deepseek-coder",
+    "meta-llama/llama-3.1-8b-instruct",
+    "google/gemini-pro"
+  ],
+  "default_settings": {
+    "max_tokens": 1000,
+    "temperature": 0.7,
+    "timeout": 30
+  }
+} 

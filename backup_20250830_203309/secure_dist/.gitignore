@@ -1,0 +1,290 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+pdm.lock
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+.idea/
+
+# UwU-CLI specific
+tmp/
+logs/
+*.log
+*.session
+*.history
+*.preferences
+*.context
+*.state
+
+# Configuration files with sensitive information
+.autopilot.json
+.telegram_config.json
+.telegram.json
+*.config.json
+*.auth.json
+*.secret.json
+*.key.json
+*.token.json
+*.password.json
+.env
+.env.local
+.env.production
+.env.development
+config/local.json
+config/secrets.json
+config/auth.json
+config/telegram.json
+
+# Personal information and system paths
+*personal*
+*private*
+*home*
+*address*
+*phone*
+
+# Windows specific
+*.exe
+*.msi
+*.bat
+*.cmd
+*.ps1
+*.vbs
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux specific
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Network and security
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# Logs and debugging
+debug.log
+error.log
+access.log
+*.log.*
+
+# Session and state files
+session.json
+state.json
+context.json
+preferences.json
+
+# AI and machine learning models
+*.model
+*.pkl
+*.h5
+*.onnx
+*.tflite
+
+# Documentation builds
+docs/_build/
+site/
+
+# Test coverage
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Development tools
+.pytest_cache/
+.coverage
+.mypy_cache/
+.pyre/
+.pytype/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Application specific
+uwu_cli.db
+uwu_cli.log
+uwu_cli.session
+uwu_cli.state
+uwu_cli.context
+uwu_cli.preferences

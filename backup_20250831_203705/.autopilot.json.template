@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "adapters": ["telegram"],
+  "telegram":
+    {
+      "token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+      "chatId": "YOUR_TELEGRAM_CHAT_ID_HERE",
+    },
+  "email":
+    {
+      "host": "smtp.gmail.com",
+      "port": 587,
+      "secure": false,
+      "user": "YOUR_EMAIL@gmail.com",
+      "pass": "YOUR_EMAIL_PASSWORD_HERE",
+      "to": "YOUR_EMAIL@gmail.com",
+    },
+  "feishu":
+    {
+      "appId": "YOUR_FEISHU_APP_ID_HERE",
+      "appSecret": "YOUR_FEISHU_APP_SECRET_HERE",
+      "useWebhook": false,
+    },
+}

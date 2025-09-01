@@ -1,0 +1,134 @@
+Metadata-Version: 2.4
+Name: uwu-cli
+Version: 2.0.0
+Summary: Professional-grade development shell with AI assistance capabilities
+Home-page: https://github.com/UwU-CLI/UwU-Cli
+Author: UwU-CLI Development Team
+Author-email: 
+Project-URL: Bug Reports, https://github.com/UwU-CLI/UwU-Cli/issues
+Project-URL: Source, https://github.com/UwU-CLI/UwU-Cli
+Project-URL: Documentation, https://github.com/UwU-CLI/UwU-Cli#readme
+Project-URL: Changelog, https://github.com/UwU-CLI/UwU-Cli/blob/main/CHANGELOG.md
+Keywords: cli shell development ai assistant cursor ide terminal windows powershell bash
+Platform: Windows
+Platform: macOS
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Terminals
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Utilities
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: colorama>=0.4.4
+Requires-Dist: pywin32>=306; sys_platform == "win32"
+Requires-Dist: pytest>=6.0.0
+Requires-Dist: pytest-cov>=2.10.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: platform
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# 🌟 UwU-CLI
+
+[![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](https://github.com/UwU-CLI/UwU-Cli/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/UwU-CLI/UwU-Cli)
+
+> Professional-grade development shell with AI assistance capabilities
+
+## ✨ Features
+
+- **AI-Powered Development**: Integrated AI assistance for coding tasks
+- **Multi-Shell Support**: Works with CMD, PowerShell, and Bash
+- **Cursor IDE Integration**: Seamless integration with Cursor IDE
+- **Advanced Quick Commands**: Powerful shortcuts for common tasks
+- **Infinite Mode**: Continuous AI assistance for complex projects
+- **Research Modes**: Deep analysis and code review capabilities
+- **Cross-Platform**: Works on Windows, macOS, and Linux
+
+## 🚀 Installation
+
+### Via pip (from GitHub)
+```bash
+pip install git+https://github.com/UwU-CLI/UwU-Cli.git
+```
+
+### Via pipx (recommended)
+```bash
+pipx install git+https://github.com/UwU-CLI/UwU-Cli.git
+```
+
+### Manual Installation
+```bash
+git clone https://github.com/UwU-CLI/UwU-Cli.git
+cd UwU-Cli
+pip install -e .
+```
+
+## 📖 Usage
+
+```bash
+# Start UwU-CLI
+uwu
+
+# Or use the shorter command
+uwu-cli
+```
+
+## 🔧 Configuration
+
+Copy the configuration template and customize it:
+
+```bash
+cp config/template.json ~/.uwu-cli/config.json
+```
+
+## 📚 Documentation
+
+- [User Guide](USER_GUIDE.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Security Information](SECURITY.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+
+## 🤝 Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+- **Issues**: [GitHub Issues](https://github.com/UwU-CLI/UwU-Cli/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/UwU-CLI/UwU-Cli/discussions)
+- **Documentation**: [Wiki](https://github.com/UwU-CLI/UwU-Cli/wiki)
+
+---
+
+**Made with ❤️ by the UwU-CLI Development Team**

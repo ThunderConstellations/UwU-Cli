@@ -1,0 +1,5 @@
+{
+  "notifications_enabled": true,
+  "command_execution": true,
+  "output_capture": true
+}
