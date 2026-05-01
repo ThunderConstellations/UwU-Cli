@@ -1,0 +1,10 @@
+{
+  "auto_save": false,
+  "history_size": 500,
+  "session_timeout_hours": 24,
+  "security_level": "high",
+  "telegram_notifications": true,
+  "cursor_integration": true,
+  "theme": "light",
+  "language": "es"
+}

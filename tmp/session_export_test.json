@@ -1,0 +1,91 @@
+{
+  "export_time": "2026-05-01T09:10:50.564581",
+  "session": {
+    "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad",
+    "start_time": "2026-05-01T09:08:02.051961",
+    "last_activity": "2026-05-01T09:10:50.555241",
+    "working_directory": "/app",
+    "user_agent": "UwU-CLI/1.0",
+    "telegram_chat_id": null,
+    "cursor_integration": false,
+    "security_level": "high",
+    "commands_executed": 6,
+    "errors_encountered": 1
+  },
+  "context": {
+    "current_theme": "dark",
+    "last_working_directory": "/test/path",
+    "favorite_commands": [
+      "git status",
+      "python test.py"
+    ],
+    "recent_files": [],
+    "git_status": {
+      "branch": "main",
+      "clean": true
+    },
+    "cursor_state": "unknown"
+  },
+  "preferences": {
+    "auto_save": false,
+    "history_size": 500,
+    "session_timeout_hours": 24,
+    "security_level": "high",
+    "telegram_notifications": true,
+    "cursor_integration": true,
+    "theme": "light",
+    "language": "es"
+  },
+  "history_sample": [
+    {
+      "timestamp": "2026-05-01T09:10:50.552715",
+      "command": "echo Hello World",
+      "success": true,
+      "output_length": 11,
+      "error": "",
+      "execution_time": 0.1,
+      "working_directory": "/app",
+      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+    },
+    {
+      "timestamp": "2026-05-01T09:10:50.553188",
+      "command": "dir",
+      "success": true,
+      "output_length": 20,
+      "error": "",
+      "execution_time": 0.2,
+      "working_directory": "/app",
+      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+    },
+    {
+      "timestamp": "2026-05-01T09:10:50.553903",
+      "command": "invalid_command",
+      "success": false,
+      "output_length": 0,
+      "error": "Command not found",
+      "execution_time": 0.0,
+      "working_directory": "/app",
+      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+    },
+    {
+      "timestamp": "2026-05-01T09:10:50.554352",
+      "command": "git status",
+      "success": true,
+      "output_length": 17,
+      "error": "",
+      "execution_time": 0.3,
+      "working_directory": "/app",
+      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+    },
+    {
+      "timestamp": "2026-05-01T09:10:50.554792",
+      "command": "python --version",
+      "success": true,
+      "output_length": 12,
+      "error": "",
+      "execution_time": 0.1,
+      "working_directory": "/app",
+      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+    }
+  ]
+}

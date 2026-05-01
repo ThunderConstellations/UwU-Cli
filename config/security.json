@@ -1,0 +1,6 @@
+{
+  "command_whitelisting": true,
+  "output_sanitization": true,
+  "rate_limiting": true,
+  "audit_logging": true
+}

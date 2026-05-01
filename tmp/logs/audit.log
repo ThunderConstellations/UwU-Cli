@@ -1,0 +1,183 @@
+2026-05-01 09:07:57,970 - INFO - Enhanced error handler initialized
+2026-05-01 09:07:57,971 - ERROR - Error occurred: ValueError: Test configuration error
+2026-05-01 09:07:57,971 - INFO - Error logged: validation - medium
+2026-05-01 09:07:57,974 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:07:57,974 - INFO - Telegram controller initialized
+2026-05-01 09:07:57,974 - INFO - Command callback set
+2026-05-01 09:07:57,980 - WARNING - Cursor not found - Cursor features will be disabled
+2026-05-01 09:07:57,982 - WARNING - Cursor not found - Cursor features will be disabled
+2026-05-01 09:07:58,365 - ERROR - Telegram API error: 404
+2026-05-01 09:07:58,367 - INFO - Command callback set
+2026-05-01 09:07:58,368 - WARNING - Already listening
+2026-05-01 09:07:58,746 - ERROR - Telegram API error: 404
+2026-05-01 09:07:58,748 - INFO - Command callback set
+2026-05-01 09:07:58,748 - WARNING - Already listening
+2026-05-01 09:07:59,134 - ERROR - Telegram API error: 404
+2026-05-01 09:07:59,135 - INFO - Command callback set
+2026-05-01 09:07:59,136 - WARNING - Already listening
+2026-05-01 09:07:59,187 - ERROR - Telegram API error: 404
+2026-05-01 09:07:59,511 - ERROR - Telegram API error: 404
+2026-05-01 09:07:59,513 - INFO - Command callback set
+2026-05-01 09:07:59,513 - WARNING - Already listening
+2026-05-01 09:07:59,712 - ERROR - Error occurred: ValueError: Invalid input
+2026-05-01 09:07:59,713 - INFO - Error logged: validation - medium
+2026-05-01 09:07:59,713 - ERROR - Error occurred: FileNotFoundError: File not found
+2026-05-01 09:07:59,713 - INFO - Error logged: file_operation - medium
+2026-05-01 09:07:59,714 - ERROR - Error occurred: PermissionError: Access denied
+2026-05-01 09:07:59,714 - INFO - Error logged: permission - high
+2026-05-01 09:07:59,714 - ERROR - Error occurred: ConnectionError: Connection failed
+2026-05-01 09:07:59,714 - INFO - Error logged: network - medium
+2026-05-01 09:07:59,714 - ERROR - Error occurred: OSError: System error
+2026-05-01 09:07:59,715 - INFO - Error logged: system - high
+2026-05-01 09:07:59,716 - ERROR - Error occurred: FileNotFoundError: command not found: invalid_cmd
+2026-05-01 09:07:59,716 - INFO - Error logged: command_execution - medium
+2026-05-01 09:07:59,717 - ERROR - Error occurred: PermissionError: permission denied
+2026-05-01 09:07:59,717 - INFO - Error logged: command_execution - medium
+2026-05-01 09:07:59,717 - ERROR - Error occurred: OSError: no such file or directory
+2026-05-01 09:07:59,717 - INFO - Error logged: command_execution - medium
+2026-05-01 09:07:59,717 - ERROR - Error occurred: PermissionError: permission denied
+2026-05-01 09:07:59,718 - INFO - Error logged: file_operation - medium
+2026-05-01 09:07:59,718 - ERROR - Error occurred: OSError: no space left on device
+2026-05-01 09:07:59,718 - INFO - Error logged: file_operation - medium
+2026-05-01 09:07:59,718 - ERROR - Error occurred: FileNotFoundError: file not found
+2026-05-01 09:07:59,718 - INFO - Error logged: file_operation - medium
+2026-05-01 09:07:59,721 - ERROR - Error occurred: ValueError: Test validation error
+2026-05-01 09:07:59,721 - INFO - Error logged: validation - low
+2026-05-01 09:07:59,722 - ERROR - Error occurred: FileNotFoundError: Test file error
+2026-05-01 09:07:59,722 - INFO - Error logged: file_operation - medium
+2026-05-01 09:07:59,722 - ERROR - Error occurred: PermissionError: Test permission error
+2026-05-01 09:07:59,722 - INFO - Error logged: permission - high
+2026-05-01 09:07:59,722 - ERROR - Error occurred: ConnectionError: Test network error
+2026-05-01 09:07:59,723 - INFO - Error logged: network - medium
+2026-05-01 09:07:59,727 - INFO - Error logs exported to tmp/error_logs_export_test.json
+2026-05-01 09:07:59,728 - ERROR - Error occurred: ValueError: Global test error
+2026-05-01 09:07:59,729 - INFO - Error logged: validation - medium
+2026-05-01 09:07:59,734 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:07:59,734 - INFO - Telegram controller initialized
+2026-05-01 09:07:59,737 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:07:59,737 - INFO - Telegram controller initialized
+2026-05-01 09:08:00,120 - WARNING - MarkdownV2 failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:00,497 - WARNING - Markdown failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:00,871 - ERROR - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:00,890 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,890 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,890 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,890 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,891 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,891 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,895 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:08:00,895 - INFO - Telegram controller initialized
+2026-05-01 09:08:01,273 - WARNING - MarkdownV2 failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:01,568 - ERROR - Telegram API error: 404
+2026-05-01 09:08:01,648 - WARNING - Markdown failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:02,028 - ERROR - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:02,050 - INFO - Session data exported to tmp/session_export_test.json
+2026-05-01 09:08:02,052 - INFO - New session created: 681f98fe-a56c-4b71-9396-d17594b94bad
+2026-05-01 09:08:02,052 - INFO - Session reset
+2026-05-01 09:08:02,052 - INFO - Command history cleared
+2026-05-01 09:08:02,054 - INFO - Performance monitoring started
+2026-05-01 09:08:03,949 - ERROR - Telegram API error: 404
+2026-05-01 09:08:05,055 - INFO - Performance monitoring stopped
+2026-05-01 09:08:05,102 - INFO - Initialized main config with defaults
+2026-05-01 09:08:05,102 - INFO - Initialized security config with defaults
+2026-05-01 09:08:05,102 - INFO - Initialized performance config with defaults
+2026-05-01 09:08:05,103 - INFO - Updated main.test_value = test_1777626485
+2026-05-01 09:08:05,125 - INFO - Test log message
+2026-05-01 09:08:05,126 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:06,230 - INFO - Updated performance.monitoring_enabled = True
+2026-05-01 09:08:06,230 - INFO - Updated security.audit_logging = True
+2026-05-01 09:08:06,233 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:08:06,233 - INFO - Telegram controller initialized
+2026-05-01 09:08:06,237 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:08:06,237 - INFO - Telegram controller initialized
+2026-05-01 09:08:06,364 - ERROR - Telegram API error: 404
+2026-05-01 09:10:46,501 - INFO - Enhanced error handler initialized
+2026-05-01 09:10:46,501 - ERROR - Error occurred: ValueError: Test configuration error
+2026-05-01 09:10:46,502 - INFO - Error logged: validation - medium
+2026-05-01 09:10:46,507 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:10:46,507 - INFO - Telegram controller initialized
+2026-05-01 09:10:46,507 - INFO - Command callback set
+2026-05-01 09:10:46,520 - WARNING - Cursor not found - Cursor features will be disabled
+2026-05-01 09:10:46,522 - WARNING - Cursor not found - Cursor features will be disabled
+2026-05-01 09:10:46,932 - ERROR - Telegram API error: 404
+2026-05-01 09:10:46,934 - INFO - Command callback set
+2026-05-01 09:10:46,935 - WARNING - Already listening
+2026-05-01 09:10:47,348 - ERROR - Telegram API error: 404
+2026-05-01 09:10:47,350 - INFO - Command callback set
+2026-05-01 09:10:47,351 - WARNING - Already listening
+2026-05-01 09:10:47,660 - ERROR - Telegram API error: 404
+2026-05-01 09:10:47,753 - ERROR - Telegram API error: 404
+2026-05-01 09:10:47,754 - INFO - Command callback set
+2026-05-01 09:10:47,755 - WARNING - Already listening
+2026-05-01 09:10:48,131 - ERROR - Telegram API error: 404
+2026-05-01 09:10:48,133 - INFO - Command callback set
+2026-05-01 09:10:48,133 - WARNING - Already listening
+2026-05-01 09:10:48,174 - ERROR - Error occurred: ValueError: Invalid input
+2026-05-01 09:10:48,174 - INFO - Error logged: validation - medium
+2026-05-01 09:10:48,174 - ERROR - Error occurred: FileNotFoundError: File not found
+2026-05-01 09:10:48,174 - INFO - Error logged: file_operation - medium
+2026-05-01 09:10:48,175 - ERROR - Error occurred: PermissionError: Access denied
+2026-05-01 09:10:48,175 - INFO - Error logged: permission - high
+2026-05-01 09:10:48,175 - ERROR - Error occurred: ConnectionError: Connection failed
+2026-05-01 09:10:48,175 - INFO - Error logged: network - medium
+2026-05-01 09:10:48,176 - ERROR - Error occurred: OSError: System error
+2026-05-01 09:10:48,176 - INFO - Error logged: system - high
+2026-05-01 09:10:48,177 - ERROR - Error occurred: FileNotFoundError: command not found: invalid_cmd
+2026-05-01 09:10:48,178 - INFO - Error logged: command_execution - medium
+2026-05-01 09:10:48,178 - ERROR - Error occurred: PermissionError: permission denied
+2026-05-01 09:10:48,178 - INFO - Error logged: command_execution - medium
+2026-05-01 09:10:48,178 - ERROR - Error occurred: OSError: no such file or directory
+2026-05-01 09:10:48,178 - INFO - Error logged: command_execution - medium
+2026-05-01 09:10:48,179 - ERROR - Error occurred: PermissionError: permission denied
+2026-05-01 09:10:48,179 - INFO - Error logged: file_operation - medium
+2026-05-01 09:10:48,179 - ERROR - Error occurred: OSError: no space left on device
+2026-05-01 09:10:48,179 - INFO - Error logged: file_operation - medium
+2026-05-01 09:10:48,180 - ERROR - Error occurred: FileNotFoundError: file not found
+2026-05-01 09:10:48,180 - INFO - Error logged: file_operation - medium
+2026-05-01 09:10:48,182 - ERROR - Error occurred: ValueError: Test validation error
+2026-05-01 09:10:48,183 - INFO - Error logged: validation - low
+2026-05-01 09:10:48,183 - ERROR - Error occurred: FileNotFoundError: Test file error
+2026-05-01 09:10:48,183 - INFO - Error logged: file_operation - medium
+2026-05-01 09:10:48,183 - ERROR - Error occurred: PermissionError: Test permission error
+2026-05-01 09:10:48,184 - INFO - Error logged: permission - high
+2026-05-01 09:10:48,184 - ERROR - Error occurred: ConnectionError: Test network error
+2026-05-01 09:10:48,184 - INFO - Error logged: network - medium
+2026-05-01 09:10:48,188 - INFO - Error logs exported to tmp/error_logs_export_test.json
+2026-05-01 09:10:48,189 - ERROR - Error occurred: ValueError: Global test error
+2026-05-01 09:10:48,190 - INFO - Error logged: validation - medium
+2026-05-01 09:10:48,194 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:10:48,194 - INFO - Telegram controller initialized
+2026-05-01 09:10:48,197 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:10:48,197 - INFO - Telegram controller initialized
+2026-05-01 09:10:48,590 - WARNING - MarkdownV2 failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:49,006 - WARNING - Markdown failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:49,388 - ERROR - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:49,405 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,405 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,405 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,406 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,406 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,406 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,410 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:10:49,410 - INFO - Telegram controller initialized
+2026-05-01 09:10:49,786 - WARNING - MarkdownV2 failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:50,041 - ERROR - Telegram API error: 404
+2026-05-01 09:10:50,162 - WARNING - Markdown failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:50,544 - ERROR - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:50,564 - INFO - Session data exported to tmp/session_export_test.json
+2026-05-01 09:10:50,566 - INFO - New session created: b41c2055-cb01-4d2b-b1d3-a5fa91430761
+2026-05-01 09:10:50,566 - INFO - Session reset
+2026-05-01 09:10:50,567 - INFO - Command history cleared
+2026-05-01 09:10:50,569 - INFO - Performance monitoring started
+2026-05-01 09:10:52,425 - ERROR - Telegram API error: 404
+2026-05-01 09:10:53,570 - INFO - Performance monitoring stopped
+2026-05-01 09:10:53,616 - INFO - Updated main.test_value = test_1777626653
+2026-05-01 09:10:53,621 - INFO - Test log message
+2026-05-01 09:10:53,622 - ERROR - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:54,726 - INFO - Updated performance.monitoring_enabled = True
+2026-05-01 09:10:54,726 - INFO - Updated security.audit_logging = True
+2026-05-01 09:10:54,728 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:10:54,729 - INFO - Telegram controller initialized
+2026-05-01 09:10:54,733 - INFO - Telegram configuration loaded successfully from .autopilot.json
+2026-05-01 09:10:54,733 - INFO - Telegram controller initialized
+2026-05-01 09:10:54,836 - ERROR - Telegram API error: 404

@@ -1,0 +1,14 @@
+{
+  "current_theme": "dark",
+  "last_working_directory": "/test/path",
+  "favorite_commands": [
+    "git status",
+    "python test.py"
+  ],
+  "recent_files": [],
+  "git_status": {
+    "branch": "main",
+    "clean": true
+  },
+  "cursor_state": "unknown"
+}

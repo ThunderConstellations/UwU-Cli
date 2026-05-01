@@ -1,0 +1,94 @@
+{
+  "9f557f49-63b3-4a8f-b380-29330083966b": {
+    "id": "9f557f49-63b3-4a8f-b380-29330083966b",
+    "title": "Test AI Chat",
+    "tags": [
+      "test",
+      "debug"
+    ],
+    "messages": [
+      {
+        "id": "a22109d7-be01-4a9b-8f48-d78f9baaa07e",
+        "role": "user",
+        "content": "Hello, can you help me with Python?",
+        "timestamp": "2026-05-01T09:07:56.004629",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "69410c6b-d7f4-4482-a342-2dbe91bcc2f1",
+        "role": "assistant",
+        "content": "Of course! I'd be happy to help you with Python. What specific question do you have?",
+        "timestamp": "2026-05-01T09:07:56.005146",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "8ca434ab-9460-4ce3-a824-0543aa5a98d8",
+        "role": "user",
+        "content": "How do I create a list comprehension?",
+        "timestamp": "2026-05-01T09:07:56.005985",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "797c1306-5ac9-4675-a150-99320600274e",
+        "role": "assistant",
+        "content": "List comprehensions in Python are a concise way to create lists. The basic syntax is: [expression for item in iterable if condition]. For example: [x**2 for x in range(10)] creates a list of squares from 0 to 9.",
+        "timestamp": "2026-05-01T09:07:56.006569",
+        "tokens": 0,
+        "metadata": {}
+      }
+    ],
+    "created_at": "2026-05-01T09:07:56.004211",
+    "last_updated": "2026-05-01T09:07:56.006575",
+    "message_count": 4,
+    "total_tokens": 0
+  },
+  "66cc5469-0012-4512-a8ed-51d856c58276": {
+    "id": "66cc5469-0012-4512-a8ed-51d856c58276",
+    "title": "Test AI Chat",
+    "tags": [
+      "test",
+      "debug"
+    ],
+    "messages": [
+      {
+        "id": "19cf8ab4-0433-48f3-b7a0-3676c58c65e7",
+        "role": "user",
+        "content": "Hello, can you help me with Python?",
+        "timestamp": "2026-05-01T09:10:44.406003",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "d5a543d3-c141-42f6-af49-74d54d3f390e",
+        "role": "assistant",
+        "content": "Of course! I'd be happy to help you with Python. What specific question do you have?",
+        "timestamp": "2026-05-01T09:10:44.407117",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "10775c3e-67cc-4484-8140-e18f7f54698a",
+        "role": "user",
+        "content": "How do I create a list comprehension?",
+        "timestamp": "2026-05-01T09:10:44.408347",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "3779957f-3d41-436b-b339-ca63817be051",
+        "role": "assistant",
+        "content": "List comprehensions in Python are a concise way to create lists. The basic syntax is: [expression for item in iterable if condition]. For example: [x**2 for x in range(10)] creates a list of squares from 0 to 9.",
+        "timestamp": "2026-05-01T09:10:44.409568",
+        "tokens": 0,
+        "metadata": {}
+      }
+    ],
+    "created_at": "2026-05-01T09:10:44.404593",
+    "last_updated": "2026-05-01T09:10:44.409579",
+    "message_count": 4,
+    "total_tokens": 0
+  }
+}
