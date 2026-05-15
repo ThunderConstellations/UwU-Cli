@@ -1,0 +1,68 @@
+2026-05-01 09:07:57,971 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Test configuration error
+2026-05-01 09:07:58,365 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:07:58,746 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:07:59,134 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:07:59,187 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-01 09:07:59,511 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:07:59,712 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Invalid input
+2026-05-01 09:07:59,713 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: File not found
+2026-05-01 09:07:59,714 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: Access denied
+2026-05-01 09:07:59,714 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ConnectionError: Connection failed
+2026-05-01 09:07:59,714 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: System error
+2026-05-01 09:07:59,716 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: command not found: invalid_cmd
+2026-05-01 09:07:59,717 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: permission denied
+2026-05-01 09:07:59,717 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: no such file or directory
+2026-05-01 09:07:59,717 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: permission denied
+2026-05-01 09:07:59,718 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: no space left on device
+2026-05-01 09:07:59,718 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: file not found
+2026-05-01 09:07:59,721 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Test validation error
+2026-05-01 09:07:59,722 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: Test file error
+2026-05-01 09:07:59,722 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: Test permission error
+2026-05-01 09:07:59,722 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ConnectionError: Test network error
+2026-05-01 09:07:59,728 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Global test error
+2026-05-01 09:08:00,871 - utils.telegram_controller - ERROR - _send_message:378 - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:00,890 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,890 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,890 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,890 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,891 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:00,891 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:01,568 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-01 09:08:02,028 - utils.telegram_controller - ERROR - _send_message:378 - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:08:03,949 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-01 09:08:05,126 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:08:06,364 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-01 09:10:46,501 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Test configuration error
+2026-05-01 09:10:46,932 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:10:47,348 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:10:47,660 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-01 09:10:47,753 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:10:48,131 - utils.autopilot - ERROR - _send_telegram:112 - Telegram API error: 404
+2026-05-01 09:10:48,174 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Invalid input
+2026-05-01 09:10:48,174 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: File not found
+2026-05-01 09:10:48,175 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: Access denied
+2026-05-01 09:10:48,175 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ConnectionError: Connection failed
+2026-05-01 09:10:48,176 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: System error
+2026-05-01 09:10:48,177 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: command not found: invalid_cmd
+2026-05-01 09:10:48,178 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: permission denied
+2026-05-01 09:10:48,178 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: no such file or directory
+2026-05-01 09:10:48,179 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: permission denied
+2026-05-01 09:10:48,179 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: no space left on device
+2026-05-01 09:10:48,180 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: file not found
+2026-05-01 09:10:48,182 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Test validation error
+2026-05-01 09:10:48,183 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: Test file error
+2026-05-01 09:10:48,183 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: Test permission error
+2026-05-01 09:10:48,184 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ConnectionError: Test network error
+2026-05-01 09:10:48,189 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Global test error
+2026-05-01 09:10:49,388 - utils.telegram_controller - ERROR - _send_message:378 - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:49,405 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,405 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,405 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,406 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,406 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:49,406 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:50,041 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-01 09:10:50,544 - utils.telegram_controller - ERROR - _send_message:378 - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-01 09:10:52,425 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-01 09:10:53,622 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-01 09:10:54,836 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404

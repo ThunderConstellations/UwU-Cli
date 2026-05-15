@@ -1,0 +1,499 @@
+{
+  "export_time": "2026-05-01T09:10:48.187016",
+  "statistics": {
+    "total_errors": 16,
+    "error_categories": {
+      "validation": {
+        "total": 3,
+        "by_severity": {
+          "medium": 2,
+          "low": 1
+        }
+      },
+      "file_operation": {
+        "total": 5,
+        "by_severity": {
+          "medium": 5
+        }
+      },
+      "permission": {
+        "total": 2,
+        "by_severity": {
+          "high": 2
+        }
+      },
+      "network": {
+        "total": 2,
+        "by_severity": {
+          "medium": 2
+        }
+      },
+      "system": {
+        "total": 1,
+        "by_severity": {
+          "high": 1
+        }
+      },
+      "command_execution": {
+        "total": 3,
+        "by_severity": {
+          "medium": 3
+        }
+      }
+    },
+    "severity_distribution": {
+      "medium": 12,
+      "low": 1,
+      "high": 3
+    },
+    "recent_errors": [
+      {
+        "timestamp": "2026-05-01T09:10:48.177705",
+        "error_type": "FileNotFoundError",
+        "error_message": "command not found: invalid_cmd",
+        "category": "command_execution",
+        "severity": "medium",
+        "context": {
+          "command": "test_cmd"
+        },
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.178180",
+        "error_type": "PermissionError",
+        "error_message": "permission denied",
+        "category": "command_execution",
+        "severity": "medium",
+        "context": {
+          "command": "test_cmd"
+        },
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.178627",
+        "error_type": "OSError",
+        "error_message": "no such file or directory",
+        "category": "command_execution",
+        "severity": "medium",
+        "context": {
+          "command": "test_cmd"
+        },
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.179062",
+        "error_type": "PermissionError",
+        "error_message": "permission denied",
+        "category": "file_operation",
+        "severity": "medium",
+        "context": {
+          "file_path": "/test/file.txt"
+        },
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.179570",
+        "error_type": "OSError",
+        "error_message": "no space left on device",
+        "category": "file_operation",
+        "severity": "medium",
+        "context": {
+          "file_path": "/test/file.txt"
+        },
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.179961",
+        "error_type": "FileNotFoundError",
+        "error_message": "file not found",
+        "category": "file_operation",
+        "severity": "medium",
+        "context": {
+          "file_path": "/test/file.txt"
+        },
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.182669",
+        "error_type": "ValueError",
+        "error_message": "Test validation error",
+        "category": "validation",
+        "severity": "low",
+        "context": {},
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.183119",
+        "error_type": "FileNotFoundError",
+        "error_message": "Test file error",
+        "category": "file_operation",
+        "severity": "medium",
+        "context": {},
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.183635",
+        "error_type": "PermissionError",
+        "error_message": "Test permission error",
+        "category": "permission",
+        "severity": "high",
+        "context": {},
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      },
+      {
+        "timestamp": "2026-05-01T09:10:48.184150",
+        "error_type": "ConnectionError",
+        "error_message": "Test network error",
+        "category": "network",
+        "severity": "medium",
+        "context": {},
+        "traceback": "NoneType: None\n",
+        "system_info": {
+          "platform": "linux",
+          "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+          "working_directory": "/app",
+          "user": "jules",
+          "environment": "development"
+        }
+      }
+    ],
+    "log_files": {
+      "error_log": "tmp/logs/errors.log",
+      "debug_log": "tmp/logs/debug.log",
+      "audit_log": "tmp/logs/audit.log"
+    }
+  },
+  "error_history": [
+    {
+      "timestamp": "2026-05-01T09:10:46.501657",
+      "error_type": "ValueError",
+      "error_message": "Test configuration error",
+      "category": "validation",
+      "severity": "medium",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.173921",
+      "error_type": "ValueError",
+      "error_message": "Invalid input",
+      "category": "validation",
+      "severity": "medium",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.174591",
+      "error_type": "FileNotFoundError",
+      "error_message": "File not found",
+      "category": "file_operation",
+      "severity": "medium",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.175006",
+      "error_type": "PermissionError",
+      "error_message": "Access denied",
+      "category": "permission",
+      "severity": "high",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.175634",
+      "error_type": "ConnectionError",
+      "error_message": "Connection failed",
+      "category": "network",
+      "severity": "medium",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.176062",
+      "error_type": "OSError",
+      "error_message": "System error",
+      "category": "system",
+      "severity": "high",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.177705",
+      "error_type": "FileNotFoundError",
+      "error_message": "command not found: invalid_cmd",
+      "category": "command_execution",
+      "severity": "medium",
+      "context": {
+        "command": "test_cmd"
+      },
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.178180",
+      "error_type": "PermissionError",
+      "error_message": "permission denied",
+      "category": "command_execution",
+      "severity": "medium",
+      "context": {
+        "command": "test_cmd"
+      },
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.178627",
+      "error_type": "OSError",
+      "error_message": "no such file or directory",
+      "category": "command_execution",
+      "severity": "medium",
+      "context": {
+        "command": "test_cmd"
+      },
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.179062",
+      "error_type": "PermissionError",
+      "error_message": "permission denied",
+      "category": "file_operation",
+      "severity": "medium",
+      "context": {
+        "file_path": "/test/file.txt"
+      },
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.179570",
+      "error_type": "OSError",
+      "error_message": "no space left on device",
+      "category": "file_operation",
+      "severity": "medium",
+      "context": {
+        "file_path": "/test/file.txt"
+      },
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.179961",
+      "error_type": "FileNotFoundError",
+      "error_message": "file not found",
+      "category": "file_operation",
+      "severity": "medium",
+      "context": {
+        "file_path": "/test/file.txt"
+      },
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.182669",
+      "error_type": "ValueError",
+      "error_message": "Test validation error",
+      "category": "validation",
+      "severity": "low",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.183119",
+      "error_type": "FileNotFoundError",
+      "error_message": "Test file error",
+      "category": "file_operation",
+      "severity": "medium",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.183635",
+      "error_type": "PermissionError",
+      "error_message": "Test permission error",
+      "category": "permission",
+      "severity": "high",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    },
+    {
+      "timestamp": "2026-05-01T09:10:48.184150",
+      "error_type": "ConnectionError",
+      "error_message": "Test network error",
+      "category": "network",
+      "severity": "medium",
+      "context": {},
+      "traceback": "NoneType: None\n",
+      "system_info": {
+        "platform": "linux",
+        "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+        "working_directory": "/app",
+        "user": "jules",
+        "environment": "development"
+      }
+    }
+  ]
+}
