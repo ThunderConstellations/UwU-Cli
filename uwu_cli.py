@@ -7,7 +7,8 @@ the functionality of CMD with Clink autosuggestions, chaotic UwU energy,
 automatic clapbacks, and AI assistance.
 """
 
-from utils.cmd_enhancements import CMDEnhancer, get_command_suggestions
+from utils.cmd_enhancements import CMDEnhancer
+from utils.help_system import HelpSystem, get_command_suggestions
 from utils.tts import speak, export_text
 from utils.config import load_config, save_config, get_alias, set_alias
 from utils.ascii_ui import Spinner, print_with_effect, get_colored_prompt
@@ -68,6 +69,7 @@ class UwUCLI:
 
         # CMD enhancements
         self.cmd_enhancer = CMDEnhancer()
+        self.help_system = HelpSystem(self)
 
         # Auto-clapback mode (always on)
         self.auto_clapback = True
@@ -698,7 +700,8 @@ class UwUCLI:
                 print(f"🎨 Current theme: {self.current_theme}")
             return True
         elif cmd == "help":
-            self.print_help()
+            topic = args[0] if args else None
+            self.print_help(topic)
             return True
         elif cmd == "config":
             if args:
@@ -755,75 +758,10 @@ class UwUCLI:
 
         return False
 
-    def print_help(self):
-        """Print help information"""
-        help_text = """
-╔══════════════════════════════════════════════════════════════╗
-║                    UwU-CLI Help                              ║
-╚══════════════════════════════════════════════════════════════╝
+        def print_help(self, topic=None):
+        """Print help information using the help system"""
+        print(self.help_system.get_help(topic))
 
-🎮 AI Commands:
-  ai:rewrite <text>     - AI-assisted rewriting
-  ai:roast <target>     - AI-assisted roasting
-  ai:script <task>      - AI-generated Python scripts
-  ai:cmd <description>  - AI-generated CMD commands
-  ai:status <job_id>    - Check AI job progress
-
-🔧 Built-in Commands:
-  pwd                   - Show current directory
-  history               - Show command history
-  theme [name]          - Change theme (uwu/feral/wizard/emo/rainbow/neon/pastel)
-  config show           - Show configuration
-  config set <key> <val> - Set configuration
-  alias list            - List aliases
-  alias set <name> <cmd> - Set alias
-  alias remove <name>   - Remove alias
-  help                  - Show this help
-
-🐚 CMD Commands:
-  All standard CMD commands work normally:
-  dir, copy, move, del, type, etc.
-
-🎨 Themes:
-  uwu     - Soft UwU style
-  feral   - Chaotic energy
-  wizard  - Arcane magic
-  emo     - Depressive aesthetic
-  rainbow - Colorful rainbow
-  neon    - Bright neon
-  pastel  - Soft pastels
-
-🔌 Plugins:
-  Plugins are automatically loaded from the plugins/ directory
-  Each plugin can add custom commands and behaviors
-
-📝 Cursor Editor Commands:
-  cursor:open <file>     - Open file in Cursor
-  cursor:open .          - Open current folder in Cursor
-  cursor:folder <path>   - Open folder in Cursor
-  cursor:new             - Open new Cursor window
-  cursor:close           - Close all Cursor windows
-  cursor:status          - Check Cursor availability
-  cursor:cmd <command>   - Send command to Cursor
-  cursor:shortcut <key>  - Send keyboard shortcut to Cursor
-  cursor:help            - Show Cursor help
-
-🎮 Telegram Remote Control:
-  telegram:start         - Start remote command control
-  telegram:stop          - Stop remote command control
-  telegram:status        - Check remote control status
-
-💡 Features:
-  - Automatic clapbacks on every command
-  - Tab completion for commands and files
-  - Command history with readline
-  - Context-aware AI responses
-  - Colorful themed prompts
-  - Full CMD compatibility
-  - Remote control via Telegram
-  - Cursor editor integration
-        """
-        print(help_text)
 
     def get_prompt(self):
         """Get the current colorful themed prompt"""

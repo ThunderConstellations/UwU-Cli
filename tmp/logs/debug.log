@@ -821,3 +821,390 @@
 2026-05-01 09:10:54,733 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized
 2026-05-01 09:10:54,835 - urllib3.connectionpool - DEBUG - _make_request:544 - https://api.telegram.org:443 "GET /botYOUR_BOT_TOKEN_HERE/getUpdates?offset=1&timeout=1 HTTP/1.1" 404 55
 2026-05-01 09:10:54,836 - utils.telegram_controller - ERROR - _check_updates:155 - Telegram API error: 404
+2026-05-16 08:44:57,088 - utils.error_handler - DEBUG - register_error_handler:167 - Registered error handler for category: command_execution
+2026-05-16 08:44:57,089 - utils.error_handler - DEBUG - register_error_handler:167 - Registered error handler for category: file_operation
+2026-05-16 08:44:57,089 - utils.error_handler - DEBUG - register_error_handler:167 - Registered error handler for category: network
+2026-05-16 08:44:57,089 - utils.error_handler - DEBUG - register_error_handler:167 - Registered error handler for category: permission
+2026-05-16 08:44:57,089 - utils.error_handler - DEBUG - register_error_handler:167 - Registered error handler for category: validation
+2026-05-16 08:44:57,089 - utils.error_handler - DEBUG - register_error_handler:167 - Registered error handler for category: system
+2026-05-16 08:44:57,089 - utils.error_handler - INFO - __init__:67 - Enhanced error handler initialized
+2026-05-16 08:44:57,089 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Test configuration error
+2026-05-16 08:44:57,090 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.089811",
+  "error_type": "ValueError",
+  "error_message": "Test configuration error",
+  "category": "validation",
+  "severity": "medium",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,091 - utils.error_handler - INFO - _log_error:229 - Error logged: validation - medium
+2026-05-16 08:44:57,093 - utils.telegram_controller - INFO - _load_config:70 - Telegram configuration loaded successfully from .autopilot.json
+2026-05-16 08:44:57,093 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized
+2026-05-16 08:44:57,094 - utils.telegram_controller - INFO - set_command_callback:95 - Command callback set
+2026-05-16 08:44:57,100 - utils.cursor_controller - WARNING - __init__:63 - Cursor not found - Cursor features will be disabled
+2026-05-16 08:44:57,101 - utils.cursor_controller - WARNING - __init__:63 - Cursor not found - Cursor features will be disabled
+2026-05-16 08:44:57,227 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Invalid input
+2026-05-16 08:44:57,227 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.227256",
+  "error_type": "ValueError",
+  "error_message": "Invalid input",
+  "category": "validation",
+  "severity": "medium",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,227 - utils.error_handler - INFO - _log_error:229 - Error logged: validation - medium
+2026-05-16 08:44:57,228 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: File not found
+2026-05-16 08:44:57,228 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.227988",
+  "error_type": "FileNotFoundError",
+  "error_message": "File not found",
+  "category": "file_operation",
+  "severity": "medium",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,228 - utils.error_handler - INFO - _log_error:229 - Error logged: file_operation - medium
+2026-05-16 08:44:57,228 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: Access denied
+2026-05-16 08:44:57,228 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.228401",
+  "error_type": "PermissionError",
+  "error_message": "Access denied",
+  "category": "permission",
+  "severity": "high",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,228 - utils.error_handler - INFO - _log_error:229 - Error logged: permission - high
+2026-05-16 08:44:57,228 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ConnectionError: Connection failed
+2026-05-16 08:44:57,229 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.228847",
+  "error_type": "ConnectionError",
+  "error_message": "Connection failed",
+  "category": "network",
+  "severity": "medium",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,229 - utils.error_handler - INFO - _log_error:229 - Error logged: network - medium
+2026-05-16 08:44:57,229 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: System error
+2026-05-16 08:44:57,229 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.229257",
+  "error_type": "OSError",
+  "error_message": "System error",
+  "category": "system",
+  "severity": "high",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,229 - utils.error_handler - INFO - _log_error:229 - Error logged: system - high
+2026-05-16 08:44:57,230 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: command not found: invalid_cmd
+2026-05-16 08:44:57,231 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.230655",
+  "error_type": "FileNotFoundError",
+  "error_message": "command not found: invalid_cmd",
+  "category": "command_execution",
+  "severity": "medium",
+  "context": {
+    "command": "test_cmd"
+  },
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,231 - utils.error_handler - INFO - _log_error:229 - Error logged: command_execution - medium
+2026-05-16 08:44:57,231 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: permission denied
+2026-05-16 08:44:57,231 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.231293",
+  "error_type": "PermissionError",
+  "error_message": "permission denied",
+  "category": "command_execution",
+  "severity": "medium",
+  "context": {
+    "command": "test_cmd"
+  },
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,231 - utils.error_handler - INFO - _log_error:229 - Error logged: command_execution - medium
+2026-05-16 08:44:57,231 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: no such file or directory
+2026-05-16 08:44:57,231 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.231671",
+  "error_type": "OSError",
+  "error_message": "no such file or directory",
+  "category": "command_execution",
+  "severity": "medium",
+  "context": {
+    "command": "test_cmd"
+  },
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,232 - utils.error_handler - INFO - _log_error:229 - Error logged: command_execution - medium
+2026-05-16 08:44:57,232 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: permission denied
+2026-05-16 08:44:57,232 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.232119",
+  "error_type": "PermissionError",
+  "error_message": "permission denied",
+  "category": "file_operation",
+  "severity": "medium",
+  "context": {
+    "file_path": "/test/file.txt"
+  },
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,232 - utils.error_handler - INFO - _log_error:229 - Error logged: file_operation - medium
+2026-05-16 08:44:57,232 - utils.error_handler - ERROR - _log_error:223 - Error occurred: OSError: no space left on device
+2026-05-16 08:44:57,232 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.232466",
+  "error_type": "OSError",
+  "error_message": "no space left on device",
+  "category": "file_operation",
+  "severity": "medium",
+  "context": {
+    "file_path": "/test/file.txt"
+  },
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,232 - utils.error_handler - INFO - _log_error:229 - Error logged: file_operation - medium
+2026-05-16 08:44:57,232 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: file not found
+2026-05-16 08:44:57,233 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.232927",
+  "error_type": "FileNotFoundError",
+  "error_message": "file not found",
+  "category": "file_operation",
+  "severity": "medium",
+  "context": {
+    "file_path": "/test/file.txt"
+  },
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,233 - utils.error_handler - INFO - _log_error:229 - Error logged: file_operation - medium
+2026-05-16 08:44:57,235 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Test validation error
+2026-05-16 08:44:57,236 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.235614",
+  "error_type": "ValueError",
+  "error_message": "Test validation error",
+  "category": "validation",
+  "severity": "low",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,236 - utils.error_handler - INFO - _log_error:229 - Error logged: validation - low
+2026-05-16 08:44:57,236 - utils.error_handler - ERROR - _log_error:223 - Error occurred: FileNotFoundError: Test file error
+2026-05-16 08:44:57,236 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.236214",
+  "error_type": "FileNotFoundError",
+  "error_message": "Test file error",
+  "category": "file_operation",
+  "severity": "medium",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,236 - utils.error_handler - INFO - _log_error:229 - Error logged: file_operation - medium
+2026-05-16 08:44:57,236 - utils.error_handler - ERROR - _log_error:223 - Error occurred: PermissionError: Test permission error
+2026-05-16 08:44:57,236 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.236577",
+  "error_type": "PermissionError",
+  "error_message": "Test permission error",
+  "category": "permission",
+  "severity": "high",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,237 - utils.error_handler - INFO - _log_error:229 - Error logged: permission - high
+2026-05-16 08:44:57,237 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ConnectionError: Test network error
+2026-05-16 08:44:57,237 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.237106",
+  "error_type": "ConnectionError",
+  "error_message": "Test network error",
+  "category": "network",
+  "severity": "medium",
+  "context": {},
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,237 - utils.error_handler - INFO - _log_error:229 - Error logged: network - medium
+2026-05-16 08:44:57,242 - utils.error_handler - INFO - export_error_logs:406 - Error logs exported to tmp/error_logs_export_test.json
+2026-05-16 08:44:57,243 - utils.error_handler - ERROR - _log_error:223 - Error occurred: ValueError: Global test error
+2026-05-16 08:44:57,243 - utils.error_handler - DEBUG - _log_error:226 - Full error details: {
+  "timestamp": "2026-05-16T08:44:57.243567",
+  "error_type": "ValueError",
+  "error_message": "Global test error",
+  "category": "validation",
+  "severity": "medium",
+  "context": {
+    "test": true
+  },
+  "traceback": "NoneType: None\n",
+  "system_info": {
+    "platform": "linux",
+    "python_version": "3.12.13 (main, Mar  6 2026, 16:37:31) [GCC 13.3.0]",
+    "working_directory": "/app",
+    "user": "jules",
+    "environment": "development"
+  }
+}
+2026-05-16 08:44:57,243 - utils.error_handler - INFO - _log_error:229 - Error logged: validation - medium
+2026-05-16 08:44:57,248 - utils.telegram_controller - INFO - _load_config:70 - Telegram configuration loaded successfully from .autopilot.json
+2026-05-16 08:44:57,248 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized
+2026-05-16 08:44:57,250 - utils.telegram_controller - INFO - _load_config:70 - Telegram configuration loaded successfully from .autopilot.json
+2026-05-16 08:44:57,250 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized
+2026-05-16 08:44:57,252 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-16 08:44:57,637 - urllib3.connectionpool - DEBUG - _make_request:544 - https://api.telegram.org:443 "POST /botYOUR_BOT_TOKEN_HERE/sendMessage HTTP/1.1" 404 55
+2026-05-16 08:44:57,638 - utils.telegram_controller - WARNING - _send_message:336 - MarkdownV2 failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-16 08:44:57,639 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-16 08:44:58,010 - urllib3.connectionpool - DEBUG - _make_request:544 - https://api.telegram.org:443 "POST /botYOUR_BOT_TOKEN_HERE/sendMessage HTTP/1.1" 404 55
+2026-05-16 08:44:58,012 - utils.telegram_controller - WARNING - _send_message:358 - Markdown failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-16 08:44:58,013 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-16 08:44:58,383 - urllib3.connectionpool - DEBUG - _make_request:544 - https://api.telegram.org:443 "POST /botYOUR_BOT_TOKEN_HERE/sendMessage HTTP/1.1" 404 55
+2026-05-16 08:44:58,384 - utils.telegram_controller - ERROR - _send_message:378 - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-16 08:44:58,391 - utils.autopilot - INFO - _load_config:53 - Autopilot configuration loaded from .autopilot.json
+2026-05-16 08:44:58,391 - utils.autopilot - INFO - __init__:30 - Autopilot initialized with adapters: ['telegram']
+2026-05-16 08:44:58,401 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-16 08:44:58,402 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-16 08:44:58,402 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-16 08:44:58,402 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-16 08:44:58,402 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-16 08:44:58,402 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-16 08:44:58,406 - utils.telegram_controller - INFO - _load_config:70 - Telegram configuration loaded successfully from .autopilot.json
+2026-05-16 08:44:58,406 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized
+2026-05-16 08:44:58,408 - utils.telegram_controller - INFO - _load_config:70 - Telegram configuration loaded successfully from .autopilot.json
+2026-05-16 08:44:58,408 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized
+2026-05-16 08:44:58,409 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-16 08:44:58,781 - urllib3.connectionpool - DEBUG - _make_request:544 - https://api.telegram.org:443 "POST /botYOUR_BOT_TOKEN_HERE/sendMessage HTTP/1.1" 404 55
+2026-05-16 08:44:58,781 - utils.telegram_controller - WARNING - _send_message:336 - MarkdownV2 failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-16 08:44:58,782 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-16 08:44:59,153 - urllib3.connectionpool - DEBUG - _make_request:544 - https://api.telegram.org:443 "POST /botYOUR_BOT_TOKEN_HERE/sendMessage HTTP/1.1" 404 55
+2026-05-16 08:44:59,155 - utils.telegram_controller - WARNING - _send_message:358 - Markdown failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-16 08:44:59,157 - urllib3.connectionpool - DEBUG - _new_conn:1049 - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-16 08:44:59,530 - urllib3.connectionpool - DEBUG - _make_request:544 - https://api.telegram.org:443 "POST /botYOUR_BOT_TOKEN_HERE/sendMessage HTTP/1.1" 404 55
+2026-05-16 08:44:59,531 - utils.telegram_controller - ERROR - _send_message:378 - All message sending methods failed: 404 - {"ok":false,"error_code":404,"description":"Not Found"}
+2026-05-16 08:44:59,537 - utils.state_manager - INFO - _load_session:54 - Session loaded successfully
+2026-05-16 08:44:59,537 - utils.state_manager - INFO - _load_history:103 - Loaded 0 command history entries
+2026-05-16 08:44:59,537 - utils.state_manager - INFO - _load_context:128 - Context loaded successfully
+2026-05-16 08:44:59,538 - utils.state_manager - INFO - _load_preferences:156 - Preferences loaded successfully
+2026-05-16 08:44:59,538 - utils.state_manager - INFO - __init__:42 - State manager initialized
+2026-05-16 08:44:59,551 - utils.state_manager - INFO - export_session_data:297 - Session data exported to tmp/session_export_test.json
+2026-05-16 08:44:59,553 - utils.state_manager - INFO - _create_new_session:81 - New session created: 3bf98f36-e5ab-4a0d-b650-b6ca1736b64a
+2026-05-16 08:44:59,553 - utils.state_manager - INFO - reset_session:312 - Session reset
+2026-05-16 08:44:59,553 - utils.state_manager - INFO - clear_history:307 - Command history cleared
+2026-05-16 08:44:59,556 - utils.system_improvements - INFO - start_monitoring:44 - Performance monitoring started
+2026-05-16 08:45:02,557 - utils.system_improvements - INFO - stop_monitoring:51 - Performance monitoring stopped
+2026-05-16 08:45:02,600 - utils.system_improvements - INFO - set_config:359 - Updated main.test_value = test_1778921102
+2026-05-16 08:45:02,606 - utils.system_improvements - INFO - _test_logging_system:583 - Test log message
+2026-05-16 08:45:02,606 - utils.secure_executor - ERROR - sanitize_output:149 - Error sanitizing output: bad escape \U at position 2
+2026-05-16 08:45:03,711 - utils.system_improvements - INFO - set_config:359 - Updated performance.monitoring_enabled = True
+2026-05-16 08:45:03,712 - utils.system_improvements - INFO - set_config:359 - Updated security.audit_logging = True
+2026-05-16 08:45:03,714 - utils.telegram_controller - INFO - _load_config:70 - Telegram configuration loaded successfully from .autopilot.json
+2026-05-16 08:45:03,714 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized
+2026-05-16 08:45:03,717 - utils.telegram_controller - INFO - _load_config:70 - Telegram configuration loaded successfully from .autopilot.json
+2026-05-16 08:45:03,717 - utils.telegram_controller - INFO - __init__:40 - Telegram controller initialized

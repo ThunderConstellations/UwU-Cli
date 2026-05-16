@@ -90,5 +90,51 @@
     "last_updated": "2026-05-01T09:10:44.409579",
     "message_count": 4,
     "total_tokens": 0
+  },
+  "f11ea5f8-bcab-4821-a1b0-ed32d795e696": {
+    "id": "f11ea5f8-bcab-4821-a1b0-ed32d795e696",
+    "title": "Test AI Chat",
+    "tags": [
+      "test",
+      "debug"
+    ],
+    "messages": [
+      {
+        "id": "9ca8df9f-5299-471c-9271-25a5bd062781",
+        "role": "user",
+        "content": "Hello, can you help me with Python?",
+        "timestamp": "2026-05-16T08:44:56.934063",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "417128f4-f85a-499b-9583-d5467545944f",
+        "role": "assistant",
+        "content": "Of course! I'd be happy to help you with Python. What specific question do you have?",
+        "timestamp": "2026-05-16T08:44:56.934920",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "757d8faf-0ea3-403b-b7eb-ee0fd7547639",
+        "role": "user",
+        "content": "How do I create a list comprehension?",
+        "timestamp": "2026-05-16T08:44:56.935755",
+        "tokens": 0,
+        "metadata": {}
+      },
+      {
+        "id": "ef8d0215-7fdf-4e7e-a24f-5f0c2a0dffd7",
+        "role": "assistant",
+        "content": "List comprehensions in Python are a concise way to create lists. The basic syntax is: [expression for item in iterable if condition]. For example: [x**2 for x in range(10)] creates a list of squares from 0 to 9.",
+        "timestamp": "2026-05-16T08:44:56.936573",
+        "tokens": 0,
+        "metadata": {}
+      }
+    ],
+    "created_at": "2026-05-16T08:44:56.932086",
+    "last_updated": "2026-05-16T08:44:56.936580",
+    "message_count": 4,
+    "total_tokens": 0
   }
 }

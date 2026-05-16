@@ -1,9 +1,9 @@
 {
-  "export_time": "2026-05-01T09:10:50.564581",
+  "export_time": "2026-05-16T08:48:03.444630",
   "session": {
-    "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad",
-    "start_time": "2026-05-01T09:08:02.051961",
-    "last_activity": "2026-05-01T09:10:50.555241",
+    "session_id": "5f038487-6726-4c90-ac70-9623d7997fa4",
+    "start_time": "2026-05-16T08:47:31.668218",
+    "last_activity": "2026-05-16T08:48:03.436782",
     "working_directory": "/app",
     "user_agent": "UwU-CLI/1.0",
     "telegram_chat_id": null,
@@ -38,54 +38,54 @@
   },
   "history_sample": [
     {
-      "timestamp": "2026-05-01T09:10:50.552715",
+      "timestamp": "2026-05-16T08:48:03.433637",
       "command": "echo Hello World",
       "success": true,
       "output_length": 11,
       "error": "",
       "execution_time": 0.1,
       "working_directory": "/app",
-      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+      "session_id": "5f038487-6726-4c90-ac70-9623d7997fa4"
     },
     {
-      "timestamp": "2026-05-01T09:10:50.553188",
+      "timestamp": "2026-05-16T08:48:03.434356",
       "command": "dir",
       "success": true,
       "output_length": 20,
       "error": "",
       "execution_time": 0.2,
       "working_directory": "/app",
-      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+      "session_id": "5f038487-6726-4c90-ac70-9623d7997fa4"
     },
     {
-      "timestamp": "2026-05-01T09:10:50.553903",
+      "timestamp": "2026-05-16T08:48:03.435044",
       "command": "invalid_command",
       "success": false,
       "output_length": 0,
       "error": "Command not found",
       "execution_time": 0.0,
       "working_directory": "/app",
-      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+      "session_id": "5f038487-6726-4c90-ac70-9623d7997fa4"
     },
     {
-      "timestamp": "2026-05-01T09:10:50.554352",
+      "timestamp": "2026-05-16T08:48:03.435532",
       "command": "git status",
       "success": true,
       "output_length": 17,
       "error": "",
       "execution_time": 0.3,
       "working_directory": "/app",
-      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+      "session_id": "5f038487-6726-4c90-ac70-9623d7997fa4"
     },
     {
-      "timestamp": "2026-05-01T09:10:50.554792",
+      "timestamp": "2026-05-16T08:48:03.436284",
       "command": "python --version",
       "success": true,
       "output_length": 12,
       "error": "",
       "execution_time": 0.1,
       "working_directory": "/app",
-      "session_id": "681f98fe-a56c-4b71-9396-d17594b94bad"
+      "session_id": "5f038487-6726-4c90-ac70-9623d7997fa4"
     }
   ]
 }

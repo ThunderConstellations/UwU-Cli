@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "/app/uwu_cli.py", line 762
+    """Print help information using the help system"""
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 761

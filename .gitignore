@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+tmp/
+*.log
+.pytest_cache/
+uwu_cli.egg-info/
