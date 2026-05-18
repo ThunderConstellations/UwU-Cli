@@ -444,10 +444,24 @@ class UwUCLI:
         except ImportError:
             pass
 
+                # Toxic phrases
+        try:
+            from phrases.toxic import toxic_roasts
+            phrases.extend(toxic_roasts)
+        except ImportError:
+            pass
+
         # Cringey phrases
         try:
             from phrases.cringey import cringey_roasts
             phrases.extend(cringey_roasts)
+        except ImportError:
+            pass
+
+                # Cringey facts
+        try:
+            from phrases.facts import cringey_facts
+            phrases.extend(cringey_facts)
         except ImportError:
             pass
 
