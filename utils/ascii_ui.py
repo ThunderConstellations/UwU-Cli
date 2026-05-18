@@ -1,6 +1,6 @@
 """
-Animated ASCII UI module for UwU-CLI using Rich
-Provides spinners, themed effects, and visual feedback
+Animated Chaotic ASCII UI module for UwU-CLI using Rich
+Provides sparkly spinners, cringe effects, and chaotic visual feedback.
 """
 
 import sys
@@ -14,33 +14,36 @@ from rich.table import Table
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.theme import Theme
 from rich.text import Text
+from rich.live import Live
 
-# Initialize Rich Console with a custom theme
+# Initialize Rich Console with a chaotic theme
 custom_theme = Theme({
-    "uwu": "magenta",
-    "feral": "bold red",
-    "wizard": "bright_cyan",
-    "emo": "dim white",
-    "rainbow": "yellow",
-    "neon": "cyan",
+    "uwu": "bold magenta",
+    "feral": "bold reverse red",
+    "wizard": "italic cyan",
+    "emo": "dim white on black",
+    "rainbow": "bold yellow",
+    "neon": "bold bright_cyan",
     "pastel": "bright_magenta",
-    "toxic": "bold green",
+    "toxic": "bold bright_green on black",
     "info": "blue",
-    "warning": "yellow",
+    "warning": "blink yellow",
     "error": "bold red",
     "success": "green"
 })
 
 console = Console(theme=custom_theme)
 
+# Cringe sparkly frames
+SPARKLES = ["✨", "🌟", "💫", "⭐", "🌈", "💖"]
+
 class Spinner:
-    """Rich-based non-blocking spinner"""
-    def __init__(self, text="Loading", theme="uwu"):
-        self.text = text
-        self.theme = theme
+    """Chaotic sparkly spinner"""
+    def __init__(self, text="Processing...", theme="uwu"):
+        self.text = f"{random.choice(SPARKLES)} {text} {random.choice(SPARKLES)}"
         self._progress = Progress(
-            SpinnerColumn(),
-            TextColumn("[{task.description}]"),
+            SpinnerColumn(spinner_name="dots12"),
+            TextColumn("[bold magenta]{task.description}[/]"),
             transient=True,
             console=console
         )
@@ -55,18 +58,31 @@ class Spinner:
             self._progress.stop()
 
 def print_with_effect(text: str, effect: Optional[str] = None, theme: str = "uwu"):
-    """Print text inside a themed Rich panel"""
+    """Print text inside a chaotic sparkly panel"""
     style = theme if theme in custom_theme.styles else "uwu"
-    title = f"UwU [{theme}]"
 
-    display_text = text
-    if effect:
-        display_text = f"{text}\n\n[dim italic]Effect: {effect}[/]"
+    # Randomly add "cringe" decorators to the title
+    decorators = ["x3", "nyah~", "bestie", "OwO", "UwU", "rawr"]
+    title = f"{random.choice(SPARKLES)} UwU [{theme}] {random.choice(decorators)} {random.choice(SPARKLES)}"
 
-    console.print(Panel(display_text, title=title, border_style=style))
+    # Re-implement legacy effects as Rich components
+    if effect == "thunderbolt":
+        console.print("[bold yellow]⚡⚡⚡ ZAP! ⚡⚡⚡[/]")
+    elif effect == "bubble":
+        console.print("[blue]🫧 🫧 Pop! 🫧 🫧[/]")
+    elif effect == "psychic":
+        console.print("[magenta]🔮 ✨ Sensing vibes... ✨ 🔮[/]")
+    elif effect == "wizard":
+        console.print("[cyan]🧙‍♂️ ✨ CASTING SPELL... ✨[/]")
+    elif effect == "emo":
+        console.print("[dim]💧 💔 Life is pain 💔 💧[/]")
+    elif effect == "feral":
+        console.print("[bold red]🔥🔥🔥 CHAOS!!! 🔥🔥🔥[/]")
+
+    console.print(Panel(text, title=title, border_style=style, padding=(1, 2)))
 
 def get_colored_prompt(theme_name: str, cwd: str = "") -> str:
-    """Get a colorful themed prompt string (using ANSI for input compatibility)"""
+    """Get a chaotic colorful themed prompt"""
     cwd = cwd or "~"
     colors = {
         "uwu": "\033[95m", "feral": "\033[91m", "wizard": "\033[35m",
@@ -83,43 +99,20 @@ def get_colored_prompt(theme_name: str, cwd: str = "") -> str:
     return f"{color}{symbol} [{cwd}]{reset} > "
 
 def display_table(title: str, columns: List[str], data: List[List[Any]]):
-    """Display a professional Rich table"""
-    table = Table(title=title, show_header=True, header_style="bold magenta")
+    """Display a professional but sparkly Rich table"""
+    table = Table(title=f"✨ {title} ✨", show_header=True, header_style="bold magenta", border_style="cyan")
     for col in columns:
         table.add_column(col)
     for row in data:
         table.add_row(*[str(item) for item in row])
     console.print(table)
 
-def progress_bar(current: int, total: int, width: int = 40, theme: str = "uwu") -> str:
-    """Legacy compatibility for progress bar (returns string)"""
-    if total == 0: return "[] 0%"
-    percentage = current / total
-    filled = int(width * percentage)
-    bar = "█" * filled + "░" * (width - filled)
-    return f"[{bar}] {percentage:.1%}"
+def success_indicator(message: str): console.print(f"[success]✨ ✅ {message} ✨[/]")
+def error_indicator(message: str): console.print(f"[error]💀 ❌ {message} 💀[/]")
+def warning_indicator(message: str): console.print(f"[warning]⚠️  {message} ⚠️[/]")
+def info_indicator(message: str): console.print(f"[info]🌸 ℹ️  {message} 🌸[/]")
 
-def loading_animation(text: str, duration: float = 2.0, theme: str = "uwu"):
-    """Show a loading animation for a specified duration"""
-    spinner = Spinner(text, theme)
-    spinner.start()
-    time.sleep(duration)
-    spinner.stop()
-
-def typing_effect(text: str, delay: float = 0.05):
-    """Simulate typing effect"""
-    for char in text:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(delay)
-    print()
-
-def success_indicator(message: str): console.print(f"[success]✅ {message}[/]")
-def error_indicator(message: str): console.print(f"[error]❌ {message}[/]")
-def warning_indicator(message: str): console.print(f"[warning]⚠️  {message}[/]")
-def info_indicator(message: str): console.print(f"[info]ℹ️  {message}[/]")
-
-# Compatibility
+# Legacy compatibility
 def get_themed_prompt(theme: str, cwd: str = "") -> str: return get_colored_prompt(theme, cwd)
 def thunderbolt_effect(): return "⚡⚡⚡"
 def bubble_party_effect(): return "🫧🫧"

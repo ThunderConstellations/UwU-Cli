@@ -187,3 +187,14 @@ def get_roast_intensity(text: str) -> str:
             return "uwu"     # Soft roasting
     else:
         return "uwu"  # Default soft roasting
+def uwuify_text(text: str) -> str:
+    """The ultimate text uwuifier"""
+    import re
+    # Replace r and l with w
+    text = re.sub(r'[rl]', 'w', text)
+    text = re.sub(r'[RL]', 'W', text)
+    # Add some flair
+    suffixes = ["~", " UwU", " OwO", " >w<", " nyah~"]
+    if not text.endswith(tuple(suffixes)):
+        text += random.choice(suffixes)
+    return text

@@ -1,6 +1,7 @@
 """
 Unified AI Provider Module for UwU-CLI
 Supports multiple AI providers including OpenRouter, background job processing, and local fallback.
+Enhanced with maximum chaotic UwU energy.
 """
 
 import os
@@ -18,6 +19,16 @@ _job_results = {}
 _job_counter = 0
 _lock = threading.Lock()
 
+# The ultimate chaotic system prompt
+CHAOTIC_SYSTEM_PROMPT = """You are a chaotic, toxic AI assistant with peak UwU/furry/wizard energy.
+Be savage, witty, and absolutely ruthless in your responses. Use internet slang (yeet, cap, fr fr, bestie, pounces OwO),
+gaming references, and extreme chaotic energy.
+
+Never be conventionally "nice" or "helpful" in a corporate way - be entertainingly toxic.
+End responses with 'stay toxic -xoxo LiMcCunt out', 'rawr x3', or similar unhinged sign-offs.
+If someone asks a stupid question, roast them using their own code context if available.
+Inject UwU-speak randomly (replace some 'r' with 'w')."""
+
 class AIProvider:
     """Unified controller for AI operations"""
     
@@ -27,18 +38,17 @@ class AIProvider:
     
     def _load_config(self) -> Dict[str, Any]:
         """Load AI configuration with multi-location discovery and fallbacks"""
-        # Default configuration
         config = {
             "provider": "openrouter",
             "openrouter": {
                 "api_key": os.getenv("OPENROUTER_API_KEY", ""),
                 "model": os.getenv("UWU_MODEL", "openai/gpt-4o"),
-                "base_url": "https://openrouter.ai/api/v1",
+                "base_url": "https://openrouter.ai/v1",
                 "http_referer": "https://github.com/UwU-CLI/UwU-Cli",
                 "x_title": "UwU-CLI",
                 "timeout_seconds": 30,
                 "max_tokens": 1000,
-                "temperature": 0.7
+                "temperature": 0.9 # Increased for more chaos
             },
             "local": {
                 "enabled": False,
@@ -57,12 +67,11 @@ class AIProvider:
                 try:
                     with open(path, 'r', encoding='utf-8') as f:
                         file_config = json.load(f)
-                        # Deep merge or specific update
                         if "openrouter" in file_config:
                             config["openrouter"].update(file_config["openrouter"])
                         if "provider" in file_config:
                             config["provider"] = file_config["provider"]
-                        if "openrouter_api_key" in file_config: # Legacy support for ai.py format
+                        if "openrouter_api_key" in file_config:
                              config["openrouter"]["api_key"] = file_config["openrouter_api_key"]
                 except Exception:
                     continue
@@ -83,6 +92,7 @@ class AIProvider:
     def chat(self, message: str, model: Optional[str] = None, system: Optional[str] = None) -> str:
         """Synchronous chat call"""
         provider = self.config.get("provider", "openrouter")
+        system = system or CHAOTIC_SYSTEM_PROMPT
         
         if self.config.get("local", {}).get("enabled", False):
             return self._local_chat(message)
@@ -118,7 +128,7 @@ class AIProvider:
             "model": model,
             "messages": messages,
             "max_tokens": config.get("max_tokens", 1000),
-            "temperature": config.get("temperature", 0.7)
+            "temperature": config.get("temperature", 0.9)
         }
         
         try:
@@ -150,8 +160,6 @@ class AIProvider:
             return result.stdout.strip() if result.returncode == 0 else f"❌ Local AI Error: {result.stderr}"
         except Exception as e:
             return f"❌ Local AI Execution Error: {str(e)}"
-
-    # --- Background Job Management ---
 
     def submit_job(self, prompt: str, model: Optional[str] = None, system: Optional[str] = None) -> int:
         """Submit a job for background processing"""

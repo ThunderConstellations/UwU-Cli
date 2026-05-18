@@ -521,21 +521,17 @@ class UwUCLI:
 
     def get_automatic_clapback(self, user_input: str) -> str:
         """Get an automatic clapback based on user input context"""
-        # Always return a clapback - no need to ask!
+        from utils.tokenizer import uwuify_text
         roast = random.choice(self.roasts)["roast"]
-
-        # Inject context from user input
         roast = inject_context(roast, user_input)
 
-        # Add some variety to the delivery
-        delivery_styles = [
-            f"💥 {roast}",
-            f"⚡ {roast}",
-            f"🔥 {roast}",
-            f"✨ {roast}",
-            f"💫 {roast}"
-        ]
+        # 30% chance to UwU-ify the roast even more
+        if random.random() < 0.3:
+            roast = uwuify_text(roast)
 
+        delivery_styles = [
+            f"💥 {roast}", f"⚡ {roast}", f"🔥 {roast}", f"✨ {roast}", f"💫 {roast}"
+        ]
         return random.choice(delivery_styles)
 
     def handle_ai_command(self, user_input):
@@ -802,10 +798,14 @@ class UwUCLI:
 
                     # Check built-in commands first
                     if self.builtin_commands(parts):
+                        if self.auto_clapback:
+                            print_with_effect(self.get_automatic_clapback(user_input), theme=self.current_theme)
                         continue
 
                     # Plugin command handling
                     if self.run_plugins_on_command(parts[0], parts[1:]):
+                        if self.auto_clapback:
+                            print_with_effect(self.get_automatic_clapback(user_input), theme=self.current_theme)
                         continue
 
                     # AI-assisted commands
